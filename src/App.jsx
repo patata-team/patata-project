@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 
 function App() {
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(20);
 
-  const increaseCounter = () => {
-    const newValue = counter + 1;
+  const incrementCounter = () => {
+    const newValue = counter + 3;
     setCounter(newValue)
   }
   
@@ -19,7 +19,7 @@ function App() {
 
       <section className="box counter-container">
         <h2>Number of clicks: {counter}</h2>
-        <button onClick={increaseCounter}>Click me</button>
+        <button onClick={incrementCounter}>Click me</button>
       </section>
     </>
   );
